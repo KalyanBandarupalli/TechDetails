@@ -10,7 +10,17 @@ namespace DataStructures
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int[] Arr = { 10, 11, 15, 20, 22, 25 };
+            int[] result = new int[Arr.Length];
+            ArrayClass AC = new ArrayClass();
+            AC.ShowArray();
+            result=AC.ShowArray(Arr, Arr.Length);
+            Console.WriteLine();
+            Console.WriteLine("The new array is");
+            foreach (var item in result)
+            {
+                Console.Write(item+"\t");
+            }
             Console.ReadKey();
         }
     }
